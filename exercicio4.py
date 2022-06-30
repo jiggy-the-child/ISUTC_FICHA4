@@ -50,8 +50,10 @@ def compra(pieces):
     receipt += '\n_________________________________________________________________________________________________________________________'
     if count_para > 0:
         receipt += f"\n{pieces[0].get('name')}        |            {count_para}             |           {pieces[0].get('unit_price')}           |        {round(pieces[0].get('discount') * count_para, 2)}             |          {round((pieces[0].get('unit_price') * count_para) - (pieces[0].get('discount') * count_para), 2)}"
+    
     if count_porca > 0:
         receipt += f"\n{pieces[1].get('name')}           |            {count_porca}             |           {pieces[1].get('unit_price')}           |        {round(pieces[1].get('discount') * count_porca, 2)}              |          {round((pieces[1].get('unit_price') * count_porca) - (pieces[1].get('discount') * count_porca), 2)}"
+    
     if count_arru > 0:
         receipt += f"\n{pieces[2].get('name')}         |            {count_arru}             |           {pieces[2].get('unit_price')}           |        {round(pieces[2].get('discount') * count_arru, 2)}              |          {round((pieces[2].get('unit_price') * count_arru) - (pieces[2].get('discount') * count_arru), 2)}"
     receipt += f"\nTotal do Desconto: {round((pieces[0].get('discount') * count_para) + (pieces[1].get('discount') * count_porca) + (pieces[2].get('discount') * count_arru), 2)}"    
