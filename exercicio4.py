@@ -1,5 +1,7 @@
 # antes de mais nada, só queria dizer que esse exercício está de parabéns.
+# neste exercício algumas coisas são redundantes como: o número de vezes que o "round" aparece no código.
 
+#TODO: melhorar a sintaxe;
 import random
 
 pieces = [
